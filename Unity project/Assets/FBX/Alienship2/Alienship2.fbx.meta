@@ -1,0 +1,256 @@
+fileFormatVersion: 2
+guid: 3c5e2e3ff838f95429f4e80b906e3250
+timeCreated: 1433256300
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: AlienshipHull In
+    100004: AlienshipHull Out
+    100006: Barier
+    100008: Cables
+    100010: Cables2
+    100012: Cables3
+    100014: Carnister
+    100016: Carnister.001
+    100018: Carnister.002
+    100020: Fridge
+    100022: Fridge_door
+    100024: Krio_down
+    100026: Krio_down.001
+    100028: Krio_up
+    100030: Krio_up.001
+    100032: Plate
+    100034: Roof in
+    100036: Roof out
+    100038: Suzanne
+    100040: UpperFloor
+    100042: Walls
+    100044: Window In
+    100046: Camera
+    100048: Camera.001
+    100050: Camera.002
+    100052: Camera.003
+    100054: Cameras
+    100056: Hull
+    100058: Lights
+    100060: Misc
+    100062: Point
+    100064: Point.001
+    100066: Point.002
+    100068: Point.003
+    100070: Point.004
+    100072: Point.005
+    100074: Point.006
+    100076: Point.007
+    100078: Point.008
+    100080: Sun
+    100082: Window up in
+    100084: Lamp
+    100086: Lamp.001
+    100088: Lamp.002
+    100090: Lamp.003
+    100092: Ladder
+    100094: Valve
+    100096: Valve.001
+    100098: Valve.002
+    400000: //RootNode
+    400002: AlienshipHull In
+    400004: AlienshipHull Out
+    400006: Barier
+    400008: Cables
+    400010: Cables2
+    400012: Cables3
+    400014: Carnister
+    400016: Carnister.001
+    400018: Carnister.002
+    400020: Fridge
+    400022: Fridge_door
+    400024: Krio_down
+    400026: Krio_down.001
+    400028: Krio_up
+    400030: Krio_up.001
+    400032: Plate
+    400034: Roof in
+    400036: Roof out
+    400038: Suzanne
+    400040: UpperFloor
+    400042: Walls
+    400044: Window In
+    400046: Camera
+    400048: Camera.001
+    400050: Camera.002
+    400052: Camera.003
+    400054: Cameras
+    400056: Hull
+    400058: Lights
+    400060: Misc
+    400062: Point
+    400064: Point.001
+    400066: Point.002
+    400068: Point.003
+    400070: Point.004
+    400072: Point.005
+    400074: Point.006
+    400076: Point.007
+    400078: Point.008
+    400080: Sun
+    400082: Window up in
+    400084: Lamp
+    400086: Lamp.001
+    400088: Lamp.002
+    400090: Lamp.003
+    400092: Ladder
+    400094: Valve
+    400096: Valve.001
+    400098: Valve.002
+    2300000: AlienshipHull In
+    2300002: AlienshipHull Out
+    2300004: Barier
+    2300006: Cables
+    2300008: Cables2
+    2300010: Cables3
+    2300012: Carnister
+    2300014: Carnister.001
+    2300016: Carnister.002
+    2300018: Fridge
+    2300020: Fridge_door
+    2300022: Krio_down
+    2300024: Krio_down.001
+    2300026: Krio_up
+    2300028: Krio_up.001
+    2300030: Plate
+    2300032: Roof in
+    2300034: Roof out
+    2300036: Suzanne
+    2300038: UpperFloor
+    2300040: Walls
+    2300042: Window In
+    2300044: Window up in
+    2300046: Lamp
+    2300048: Lamp.001
+    2300050: Lamp.002
+    2300052: Lamp.003
+    2300054: Ladder
+    2300056: Valve
+    2300058: Valve.001
+    2300060: Valve.002
+    3300000: AlienshipHull In
+    3300002: AlienshipHull Out
+    3300004: Barier
+    3300006: Cables
+    3300008: Cables2
+    3300010: Cables3
+    3300012: Carnister
+    3300014: Carnister.001
+    3300016: Carnister.002
+    3300018: Fridge
+    3300020: Fridge_door
+    3300022: Krio_down
+    3300024: Krio_down.001
+    3300026: Krio_up
+    3300028: Krio_up.001
+    3300030: Plate
+    3300032: Roof in
+    3300034: Roof out
+    3300036: Suzanne
+    3300038: UpperFloor
+    3300040: Walls
+    3300042: Window In
+    3300044: Window up in
+    3300046: Lamp
+    3300048: Lamp.001
+    3300050: Lamp.002
+    3300052: Lamp.003
+    3300054: Ladder
+    3300056: Valve
+    3300058: Valve.001
+    3300060: Valve.002
+    4300000: Suzanne
+    4300002: Carnister.001
+    4300004: Carnister.002
+    4300006: Carnister
+    4300008: Cables3
+    4300010: Cables2
+    4300012: Krio_down.001
+    4300014: Krio_up.001
+    4300016: Barier
+    4300018: Fridge
+    4300020: Fridge_door
+    4300022: Cables
+    4300024: Plate
+    4300026: Window In
+    4300028: AlienshipHull Out
+    4300030: AlienshipHull In
+    4300032: Roof in
+    4300034: Roof out
+    4300036: Walls
+    4300038: UpperFloor
+    4300040: Window up in
+    4300042: Lamp.003
+    4300044: Lamp.002
+    4300046: Lamp.001
+    4300048: Lamp
+    4300050: Ladder
+    4300052: Valve.002
+    4300054: Valve
+    4300056: Valve.001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

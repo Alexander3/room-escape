@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: 8440704ec62c4654487710bdce635aa1
+timeCreated: 1429992966
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SwitchBoxDoor
+    100004: SwitchBoxIcon1
+    100006: SwitchBoxIcon2
+    100008: SwitchBoxIcon3
+    100010: SwitchBoxIcon4
+    100012: SwitchBoxPanel
+    100014: SwitchBoxSlider1
+    100016: SwitchBoxSlider2
+    100018: SwitchBoxSlider3
+    100020: SwitchBoxSlider4
+    100022: SwitchBoxSliderFrame1
+    100024: SwitchBoxSliderFrame2
+    100026: SwitchBoxSliderFrame3
+    100028: SwitchBoxSliderFrame4
+    400000: //RootNode
+    400002: SwitchBoxDoor
+    400004: SwitchBoxIcon1
+    400006: SwitchBoxIcon2
+    400008: SwitchBoxIcon3
+    400010: SwitchBoxIcon4
+    400012: SwitchBoxPanel
+    400014: SwitchBoxSlider1
+    400016: SwitchBoxSlider2
+    400018: SwitchBoxSlider3
+    400020: SwitchBoxSlider4
+    400022: SwitchBoxSliderFrame1
+    400024: SwitchBoxSliderFrame2
+    400026: SwitchBoxSliderFrame3
+    400028: SwitchBoxSliderFrame4
+    2300000: //RootNode
+    2300002: SwitchBoxDoor
+    2300004: SwitchBoxIcon1
+    2300006: SwitchBoxIcon2
+    2300008: SwitchBoxIcon3
+    2300010: SwitchBoxIcon4
+    2300012: SwitchBoxPanel
+    2300014: SwitchBoxSlider1
+    2300016: SwitchBoxSlider2
+    2300018: SwitchBoxSlider3
+    2300020: SwitchBoxSlider4
+    2300022: SwitchBoxSliderFrame1
+    2300024: SwitchBoxSliderFrame2
+    2300026: SwitchBoxSliderFrame3
+    2300028: SwitchBoxSliderFrame4
+    3300000: //RootNode
+    3300002: SwitchBoxDoor
+    3300004: SwitchBoxIcon1
+    3300006: SwitchBoxIcon2
+    3300008: SwitchBoxIcon3
+    3300010: SwitchBoxIcon4
+    3300012: SwitchBoxPanel
+    3300014: SwitchBoxSlider1
+    3300016: SwitchBoxSlider2
+    3300018: SwitchBoxSlider3
+    3300020: SwitchBoxSlider4
+    3300022: SwitchBoxSliderFrame1
+    3300024: SwitchBoxSliderFrame2
+    3300026: SwitchBoxSliderFrame3
+    3300028: SwitchBoxSliderFrame4
+    4300000: SwitchBoxFrame
+    4300002: SwitchBoxIcon1
+    4300004: SwitchBoxIcon3
+    4300006: SwitchBoxIcon2
+    4300008: SwitchBoxIcon4
+    4300010: SwitchBoxSliderFrame4
+    4300012: SwitchBoxSlider4
+    4300014: SwitchBoxSliderFrame3
+    4300016: SwitchBoxSlider3
+    4300018: SwitchBoxSliderFrame2
+    4300020: SwitchBoxSlider2
+    4300022: SwitchBoxSliderFrame1
+    4300024: SwitchBoxSlider1
+    4300026: SwitchBoxDoor
+    4300028: SwitchBoxPanel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
