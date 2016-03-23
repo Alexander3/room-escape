@@ -10532,7 +10532,7 @@ MonoBehaviour:
   MaxSightAngle: 45
   PullingSpeed: 5
   EyeShift: .5
-  CenterEyeAnchor: {fileID: 0}
+  CenterEyeAnchor: {fileID: 308959886}
   AlternativeCamera: {fileID: 308959886}
   Player: {fileID: 1094844162}
 --- !u!136 &1094844164
@@ -16463,7 +16463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e2522ae8054e0444eb9feb49c671f98e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2522ae8054e0444eb9feb49c671f98e, type: 3}
@@ -21095,7 +21095,7 @@ Transform:
   m_PrefabParentObject: {fileID: 434400, guid: 4e3a29d9501f7254ca9fe0b4554012a0, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1884866409}
-  m_LocalRotation: {x: .745036244, y: .661940575, z: -.0350759663, w: .0743328035}
+  m_LocalRotation: {x: .745036304, y: .661940634, z: -.03507597, w: .0743328109}
   m_LocalPosition: {x: -.230619699, y: .132420838, z: 0}
   m_LocalScale: {x: 1.00000012, y: 1.00000024, z: 1}
   m_Children:
@@ -21686,6 +21686,7 @@ GameObject:
   - 4: {fileID: 1940514491}
   - 33: {fileID: 1940514493}
   - 23: {fileID: 1940514492}
+  - 64: {fileID: 1940514494}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: Untagged
@@ -21746,6 +21747,18 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940514490}
+  m_Mesh: {fileID: 4300056, guid: ccacaa0c826c2db419e35aaf7de25be2, type: 3}
+--- !u!64 &1940514494
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940514490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
   m_Mesh: {fileID: 4300056, guid: ccacaa0c826c2db419e35aaf7de25be2, type: 3}
 --- !u!1 &1944693303
 GameObject:
@@ -23613,6 +23626,8 @@ GameObject:
   - 33: {fileID: 2110093500}
   - 23: {fileID: 2110093499}
   - 65: {fileID: 2110093501}
+  - 54: {fileID: 2110093503}
+  - 114: {fileID: 2110093502}
   m_Layer: 0
   m_Name: Fridge_door
   m_TagString: Untagged
@@ -23680,6 +23695,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .720173001, y: .117250025, z: 1.38423526}
   m_Center: {x: -.360069573, y: .0504658185, z: 6.25848884e-07}
+--- !u!114 &2110093502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110093497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36571fe8b10e9a4192d98b3c79ee33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _highlightIntensity: .699999988
+  MoveShift: {x: .75, y: 0, z: 0}
+  MoveSpeed: 5
+  UseOnlyOnce: 0
+  HighlightColor: {r: 1, g: 1, b: 1, a: 1}
+  HighlightSpeed: 6
+--- !u!54 &2110093503
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110093497}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2110439497
 GameObject:
   m_ObjectHideFlags: 0
