@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: fridge_main
+  m_Name: Walls__walls
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 1771ea383dddb794aa67ac36e4f6adfd, type: 3}
+          m_Texture: {fileID: 2800000, guid: 78756a6ae265be84fa017d85dbb91562, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .673799992, g: .673799992, b: .673799992, a: 1}
+        second: {r: .800000012, g: .800000012, b: .800000012, a: 1}

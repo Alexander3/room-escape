@@ -177,11 +177,43 @@ ModelImporter:
     4300058: Fridge_door
     4300060: Cables
     4300062: Ladder
+    6400000: AlienshipHull_Out
+    6400002: Barier
+    6400004: Cables
+    6400006: Cables2
+    6400008: Cables3
+    6400010: Carnister
+    6400012: Carnister_001
+    6400014: Carnister_002
+    6400016: Floor
+    6400018: Fridge
+    6400020: Fridge_door
+    6400022: Krio_down
+    6400024: Krio_down_001
+    6400026: Krio_up
+    6400028: Krio_up_001
+    6400030: Ladder
+    6400032: Lamp
+    6400034: Lamp_001
+    6400036: Lamp_002
+    6400038: Lamp_003
+    6400040: Plate
+    6400042: Poster
+    6400044: Roof_in
+    6400046: Roof_out
+    6400048: UpperFloor
+    6400050: Valve
+    6400052: Valve_001
+    6400054: Valve_002
+    6400056: Walls
+    6400058: Walls2
+    6400060: Window_In
+    6400062: Window_up_in
     7400000: Default Take
     9500000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 1
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -204,7 +236,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
