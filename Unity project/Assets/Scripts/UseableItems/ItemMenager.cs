@@ -58,7 +58,7 @@ public class ItemMenager : MonoBehaviour
     }
     void LookAhead()
     {
-        Vector3 eyeOrigin = CenterEyeAnchor.transform.position + CenterEyeAnchor.transform.forward * EyeShift;
+		Vector3 eyeOrigin = CenterEyeAnchor.transform.position;//+ CenterEyeAnchor.transform.forward * EyeShift;
         Vector3 eyeDirection = CenterEyeAnchor.transform.forward * MaxSightDistance;
         GameObject selectedUsable = null;
         float selectedUsableCameraAngle = float.NaN;
@@ -104,8 +104,8 @@ public class ItemMenager : MonoBehaviour
         _pickedItem.GetComponent<Rigidbody>().useGravity = false;
        // Physics.IgnoreCollision(_pickedItem.GetComponent<Collider>(), Player.GetComponent<CharacterController>(), true);
         Pickable pickable = _pickedItem.GetComponent<Pickable>();
-        _handPosShift = pickable.HandShift;
-        _handRotShift = pickable.RotationShift;
+        _handPosShift = pickable.handShift;
+        _handRotShift = pickable.rotationShift;
         pickable.UnHighlightItem();
         _seenUsable = null;
     }

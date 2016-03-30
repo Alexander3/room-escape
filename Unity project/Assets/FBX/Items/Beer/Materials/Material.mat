@@ -2,15 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Material
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -80,10 +81,6 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Cutoff
-        second: .5
-      data:
-        first:
           name: _SrcBlend
         second: 1
       data:
@@ -92,12 +89,16 @@ Material:
         second: 0
       data:
         first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
           name: _ZWrite
         second: 1
       data:
         first:
           name: _Glossiness
-        second: .5
+        second: 0.5
       data:
         first:
           name: _Metallic
@@ -109,7 +110,7 @@ Material:
       data:
         first:
           name: _Parallax
-        second: .0199999996
+        second: 0.02
       data:
         first:
           name: _OcclusionStrength
@@ -124,21 +125,21 @@ Material:
         second: 0
       data:
         first:
-          name: _EmissionScaleUI
-        second: .0599999987
-      data:
-        first:
           name: _Mode
         second: 0
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 0.06
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: .0599999987, g: .0599999987, b: .0599999987, a: .0599999987}
+        second: {r: 0, g: 0, b: 0, a: 0.06}
       data:
         first:
           name: _Color
-        second: {r: .185553625, g: .764705896, b: .286047369, a: 1}
+        second: {r: 0.18555363, g: 0.7647059, b: 0.28604737, a: 1}
       data:
         first:
           name: _EmissionColorUI
