@@ -23,7 +23,7 @@ public class MoveOnUse : Useable
 		base.Update();
 		if (_moving)
 			Move();
-	} 
+	}
 
 	override protected void doUse()
     {     

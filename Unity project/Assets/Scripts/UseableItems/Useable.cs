@@ -50,7 +50,7 @@ public abstract class Useable : MonoBehaviour {
 		if (useOnlyOnce && _alreadyUsed)
 			return;
 
-		doUse ();
+		doUse();
 
 		_alreadyUsed = true;
 	}
