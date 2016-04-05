@@ -9,7 +9,7 @@ public abstract class Useable : MonoBehaviour {
 	protected bool _highlighting = false;
 	protected bool _highlight = true;
 	private Material _highlightedMaterial;
-	private Material _material;
+	protected Material _material;
 	private Material _originalMaterial;
 
 	protected void Start()
@@ -40,10 +40,13 @@ public abstract class Useable : MonoBehaviour {
 
 	private void Highlight()
 	{
+		Color color = _material.GetColor ("_EmissionColor");
 		if (_highlight)
-			_material.SetColor("_EmissionColor", Color.Lerp(_material.GetColor("_EmissionColor"), highlightColor, highlightSpeed * Time.deltaTime));
+			_material.SetColor("_EmissionColor", Color.Lerp(color, highlightColor, highlightSpeed * Time.deltaTime));
 		else
-			_material.SetColor("_EmissionColor", Color.Lerp(_material.GetColor("_EmissionColor"), Color.black, highlightSpeed * Time.deltaTime));
+			_material.SetColor("_EmissionColor", Color.Lerp(color, Color.black, highlightSpeed * Time.deltaTime));
+		if (color == Color.black || color == highlightColor)
+			_highlighting = false;
 	}
 
 	public void Use(){
