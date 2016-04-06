@@ -3,7 +3,7 @@ guid: ccacaa0c826c2db419e35aaf7de25be2
 timeCreated: 1458770152
 licenseType: Free
 ModelImporter:
-  serializedVersion: 18
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
     100002: AlienshipHull_Out
@@ -43,6 +43,7 @@ ModelImporter:
     100070: Walls2
     100072: Window_In
     100074: Window_up_in
+    100076: LampAft
     400000: //RootNode
     400002: AlienshipHull_Out
     400004: Barier
@@ -81,6 +82,7 @@ ModelImporter:
     400070: Walls2
     400072: Window_In
     400074: Window_up_in
+    400076: LampAft
     2300000: AlienshipHull_Out
     2300002: Barier
     2300004: Cables
@@ -113,6 +115,7 @@ ModelImporter:
     2300058: Walls2
     2300060: Window_In
     2300062: Window_up_in
+    2300064: LampAft
     3300000: AlienshipHull_Out
     3300002: Barier
     3300004: Cables
@@ -145,6 +148,7 @@ ModelImporter:
     3300058: Walls2
     3300060: Window_In
     3300062: Window_up_in
+    3300064: LampAft
     4300000: Floor
     4300002: Window_up_in
     4300004: Plate
@@ -177,6 +181,7 @@ ModelImporter:
     4300058: Fridge_door
     4300060: Cables
     4300062: Ladder
+    4300064: LampAft
     6400000: AlienshipHull_Out
     6400002: Barier
     6400004: Cables
@@ -209,6 +214,7 @@ ModelImporter:
     6400058: Walls2
     6400060: Window_In
     6400062: Window_up_in
+    6400064: LampAft
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -218,6 +224,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -225,9 +232,9 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
@@ -251,20 +258,19 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
