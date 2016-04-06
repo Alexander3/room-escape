@@ -4,12 +4,18 @@ using System.Linq;
 
 class GameController : MonoBehaviour
 {
-	public delegate void SwitchLock(string objectName);
-	public static event SwitchLock Unlock;
-	public static event SwitchLock Lock;
+	public GameObject Door;
+	public GameObject SwitchBoxDoor;
 
 	private Color[] _screensColorsOrder	= { Color.green, Color.red, Color.blue };
 	private bool[] _screensColorsState = new bool[3];
+
+	private bool[] _switchesState = new bool[4];
+	private bool[] _requiredSwitchesState = {true,false,false,false};
+
+
+
+
     public void Start()
     {
 		ColorScreen.ScreenUsed += (short id, Color c) => {
@@ -19,12 +25,20 @@ class GameController : MonoBehaviour
 				_screensColorsState[id] = false;
 			_screensColorsState.All(a => a);
 			if (_screensColorsState.All (x => x)){
-				Unlock("SwitchBoxDoor");
+				SwitchBoxDoor.GetComponent<Useable>().CanBeUsed = true;
 				Debug.Log("unlocked");
 			}
-			else if(Lock != null)
-				Lock("SwitchBoxDoor");
+			else
+				SwitchBoxDoor.GetComponent<Useable>().CanBeUsed = false;
+		};
 
+		MoveSwitch.SwitchMoved += (short id, bool state) => {
+			_switchesState [id] = state;
+			if (_switchesState [0] == true) {
+				Door.GetComponent<Door>().enabled = true;
+				Debug.Log ("unlocked");
+			} else
+				Door.GetComponent<Door>().enabled = false;
 		};
 
     }

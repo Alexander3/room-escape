@@ -17,16 +17,7 @@ public abstract class Useable : MonoBehaviour {
 	protected void Start()
 	{
 		_material = GetComponent<Renderer>().material;
-		_material.EnableKeyword ("_EMISSION");
-		GameController.Unlock += (objectName) => {
-			if (gameObject.name == objectName)
-				CanBeUsed = true;
-		};
-		GameController.Lock += (objectName) => {
-			if (gameObject.name == objectName)
-				CanBeUsed = false;
-		};
-				
+		_material.EnableKeyword ("_EMISSION");				
 	}
 
 	protected void Update()
