@@ -22,7 +22,7 @@ public abstract class Useable : MonoBehaviour {
 			if (gameObject.name == objectName)
 				CanBeUsed = true;
 		};
-		GameController.Unlock += (objectName) => {
+		GameController.Lock += (objectName) => {
 			if (gameObject.name == objectName)
 				CanBeUsed = false;
 		};

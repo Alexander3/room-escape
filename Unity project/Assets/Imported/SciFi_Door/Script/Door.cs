@@ -12,7 +12,7 @@ public class Door : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if(other is CharacterController)
-		anim.SetBool("open", true);
+			anim.SetBool("open", true);
 
 	}
 	void OnTriggerExit(Collider other)

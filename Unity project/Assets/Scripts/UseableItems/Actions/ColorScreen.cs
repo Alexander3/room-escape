@@ -12,6 +12,7 @@ public class ColorScreen : Useable
 	override protected void doUse()
 	{    
 		_material.SetColor ("_Color", colors[cid]);
+		_material.mainTexture = null;
 		if (ScreenUsed != null)
 			ScreenUsed (id, colors [cid]);
 		if (++cid == colors.Length)
