@@ -10,20 +10,43 @@ ModelImporter:
     100004: safe
     100006: safe_MeshPart0
     100008: safe_MeshPart1
+    100010: door
+    100012: safe_001
+    100014: safe_002
     400000: pokretlo
     400002: //RootNode
     400004: safe
     400006: safe_MeshPart0
     400008: safe_MeshPart1
+    400010: door
+    400012: safe_001
+    400014: safe_002
     2300000: pokretlo
     2300002: safe_MeshPart0
     2300004: safe_MeshPart1
+    2300006: door
+    2300008: safe
+    2300010: safe_001
+    2300012: safe_002
     3300000: pokretlo
     3300002: safe_MeshPart0
     3300004: safe_MeshPart1
+    3300006: door
+    3300008: safe
+    3300010: safe_001
+    3300012: safe_002
     4300000: pokretlo
     4300002: safe_MeshPart0
     4300004: safe_MeshPart1
+    4300006: door
+    4300008: safe_002
+    4300010: safe_001
+    4300012: safe
+    6400000: door
+    6400002: pokretlo
+    6400004: safe
+    6400006: safe_001
+    6400008: safe_002
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -52,7 +75,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -69,7 +92,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []
@@ -84,7 +107,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
