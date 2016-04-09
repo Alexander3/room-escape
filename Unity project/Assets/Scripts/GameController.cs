@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Linq;
 
 
@@ -6,6 +7,9 @@ class GameController : MonoBehaviour
 {
 	public GameObject Door;
 	public GameObject SwitchBoxDoor;
+    public GameObject Tvset4;
+    public GameObject SwitchBoxSlider2;
+    public GameObject pokretlo;
 
 	private Color[] _screensColorsOrder	= { Color.green, Color.red, Color.blue };
 	private bool[] _screensColorsState = new bool[3];
@@ -34,12 +38,30 @@ class GameController : MonoBehaviour
 
 		MoveSwitch.SwitchMoved += (short id, bool state) => {
 			_switchesState [id] = state;
-			if (_switchesState [0] == true) {
-				Door.GetComponent<Door>().enabled = true;
-				Debug.Log ("unlocked");
-			} else
-				Door.GetComponent<Door>().enabled = false;
-		};
+            if (_switchesState[0] == true)
+            {
+                //Door.GetComponent<Door>().enabled = true;
+                Tvset4.GetComponent<Useable>().CanBeUsed = true;
+                Debug.Log("unlocked");
+                 
+                   if (_switchesState[1] == true)
+                
+                      pokretlo.GetComponent<Useable>().CanBeUsed = true;
+                
+                   else
+                      pokretlo.GetComponent<Useable>().CanBeUsed = false;
+            }
+            else
+                //Door.GetComponent<Door>().enabled = false;
+                Tvset4.GetComponent<Useable>().CanBeUsed = false; ;
+        };
+
+        TextScreen.TvScreenUsed += () =>
+        {
+            SwitchBoxSlider2.GetComponent<Useable>().CanBeUsed = true;
+
+
+        };
 
     }
 }
