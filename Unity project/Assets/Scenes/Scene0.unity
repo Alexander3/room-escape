@@ -169,7 +169,7 @@ MonoBehaviour:
   UseOnlyOnce: 0
   HighlightSpeed: 6
   AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-  CanBeUsed: 1
+  CanBeUsed: 0
   Rotation: {x: 0, y: -120, z: 0}
   MoveSpeed: 6
 --- !u!54 &102394987

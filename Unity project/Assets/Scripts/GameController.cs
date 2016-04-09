@@ -23,8 +23,8 @@ class GameController : MonoBehaviour
 				_screensColorsState[id] = true;
 			else
 				_screensColorsState[id] = false;
-			_screensColorsState.All(a => a);
-			if (_screensColorsState.All (x => x)){
+
+			if (_screensColorsState.All(x => x)){
 				SwitchBoxDoor.GetComponent<Useable>().CanBeUsed = true;
 				Debug.Log("unlocked");
 			}
