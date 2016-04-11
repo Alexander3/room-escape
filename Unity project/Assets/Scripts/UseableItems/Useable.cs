@@ -46,9 +46,11 @@ public abstract class Useable : MonoBehaviour {
 		Color color = _material.GetColor ("_EmissionColor");
 
 		if (_highlight)
-			_material.SetColor("_EmissionColor", Color.Lerp(color, _highlightColor, HighlightSpeed * Time.deltaTime));
+			color = Color.Lerp (color, _highlightColor, HighlightSpeed * Time.deltaTime);
 		else
-			_material.SetColor("_EmissionColor", Color.Lerp(color, Color.black, HighlightSpeed * Time.deltaTime));
+			color = Color.Lerp (color, Color.black, HighlightSpeed * Time.deltaTime);
+		
+		_material.SetColor ("_EmissionColor", color);
 		if (color == Color.black || color == _highlightColor)
 			_highlighting = false;
 	}

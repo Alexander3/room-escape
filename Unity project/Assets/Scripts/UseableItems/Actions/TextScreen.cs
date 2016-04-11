@@ -4,21 +4,20 @@ using UnityEngine.UI;
 
 public class TextScreen : Useable
 {
+	public delegate void TvScreenUse();
+	public static event TvScreenUse TvScreenUsed;
 
-    public Text text;
     public string code;
+	public GameObject Display;
 
-
-    public delegate void TvScreenUse();
-    public static event TvScreenUse TvScreenUsed;
+	private Text text;
 
     override protected void doUse()
     {
-        text = GameObject.Find("Text").GetComponent<Text>();
+		text = Display.GetComponent<Text>();
 
         text.text = code;
         if (TvScreenUsed != null)
             TvScreenUsed();
-
     }
 }

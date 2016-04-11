@@ -5,20 +5,16 @@ using System.Linq;
 
 class GameController : MonoBehaviour
 {
-	public GameObject Door;
-	public GameObject SwitchBoxDoor;
-    public GameObject Tvset4;
-    public GameObject SwitchBoxSlider2;
-    public GameObject pokretlo;
+	public GameObject Door = null;
+	public GameObject SwitchBoxDoor = null;
+	public GameObject Tvset4 = null;
+	public GameObject SwitchBoxSlider2 = null;
+	public GameObject pokretlo = null;
+	public GameObject safeDoor = null;
 
 	private Color[] _screensColorsOrder	= { Color.green, Color.red, Color.blue };
 	private bool[] _screensColorsState = new bool[3];
-
 	private bool[] _switchesState = new bool[4];
-	private bool[] _requiredSwitchesState = {true,false,false,false};
-
-
-
 
     public void Start()
     {
@@ -29,11 +25,10 @@ class GameController : MonoBehaviour
 				_screensColorsState[id] = false;
 
 			if (_screensColorsState.All(x => x)){
-				SwitchBoxDoor.GetComponent<Useable>().CanBeUsed = true;
-				Debug.Log("unlocked");
+				unlock(SwitchBoxDoor);
 			}
 			else
-				SwitchBoxDoor.GetComponent<Useable>().CanBeUsed = false;
+				lockAgain(SwitchBoxDoor);
 		};
 
 		MoveSwitch.SwitchMoved += (short id, bool state) => {
@@ -41,27 +36,36 @@ class GameController : MonoBehaviour
             if (_switchesState[0] == true)
             {
                 //Door.GetComponent<Door>().enabled = true;
-                Tvset4.GetComponent<Useable>().CanBeUsed = true;
-                Debug.Log("unlocked");
-                 
-                   if (_switchesState[1] == true)
-                
-                      pokretlo.GetComponent<Useable>().CanBeUsed = true;
-                
-                   else
-                      pokretlo.GetComponent<Useable>().CanBeUsed = false;
+				unlock(Tvset4);
             }
             else
                 //Door.GetComponent<Door>().enabled = false;
-                Tvset4.GetComponent<Useable>().CanBeUsed = false; ;
+				lockAgain(Tvset4);
+			
+			if (_switchesState[2] == true)                
+				unlock(pokretlo);                
+			else
+				lockAgain(pokretlo);
         };
+
+		TurnLock.LockTurned += (float rot) => {
+			if (rot % 360 == 3 * pokretlo.GetComponent<RotateOnUse>().Rotation.y)                
+				unlock(safeDoor);                
+			else
+				lockAgain(safeDoor);
+		};
 
         TextScreen.TvScreenUsed += () =>
         {
-            SwitchBoxSlider2.GetComponent<Useable>().CanBeUsed = true;
-
-
+			unlock(SwitchBoxSlider2);
         };
 
     }
+	private static void unlock(GameObject obj){
+		obj.GetComponent<Useable>().CanBeUsed = true; 
+		Debug.Log (obj.name + " unlocked");
+	}
+	private static void lockAgain(GameObject obj){
+		obj.GetComponent<Useable>().CanBeUsed = false;
+	}
 }
