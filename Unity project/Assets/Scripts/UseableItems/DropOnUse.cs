@@ -9,7 +9,7 @@ public class DropOnUse : Useable
 		Rigidbody rg = GetComponent<Rigidbody> ();
 		rg.isKinematic = false;
 		rg.useGravity = true;
-		gameObject.AddComponent<OnlyPickable> ();
+		GetComponent<Pickable>().enabled = true;
 		enabled=false;
 	}
 }
