@@ -104,7 +104,7 @@ MonoBehaviour:
   HighlightSpeed: 6
   AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
   CanBeUsed: 0
-  Rotation: {x: 0, y: 10, z: 0}
+  Rotation: {x: 0, y: 18, z: 0}
   MoveSpeed: 6
   NonStop: 1
 --- !u!54 &12399637
@@ -998,40 +998,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 369853835}
   m_Mesh: {fileID: 4300010, guid: ccacaa0c826c2db419e35aaf7de25be2, type: 3}
---- !u!1 &400631912 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 181504, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
-  m_PrefabInternal: {fileID: 1258700862}
---- !u!114 &400631914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 400631912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0eef623ee95ac044b5f33ebfc32f4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseOnlyOnce: 0
-  HighlightSpeed: 6
-  AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-  CanBeUsed: 1
-  MoveShift: {x: 0, y: 0.02866468, z: 0}
-  MoveSpeed: 6
-  id: 3
---- !u!65 &400631916
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 400631912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
-  m_Center: {x: 0, y: 0, z: 0.000034476627}
 --- !u!1 &402206697
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,40 +2567,6 @@ Rigidbody:
 Transform:
   m_PrefabParentObject: {fileID: 430550, guid: 6be579eb8c4af8042896243285e41a98, type: 2}
   m_PrefabInternal: {fileID: 2024427834}
---- !u!1 &1161689205 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 129086, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
-  m_PrefabInternal: {fileID: 1258700862}
---- !u!114 &1161689207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1161689205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0eef623ee95ac044b5f33ebfc32f4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseOnlyOnce: 0
-  HighlightSpeed: 6
-  AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-  CanBeUsed: 1
-  MoveShift: {x: 0, y: 0.02866468, z: 0}
-  MoveSpeed: 6
-  id: 2
---- !u!65 &1161689209
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1161689205}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
-  m_Center: {x: 0, y: 0, z: 0.000034715045}
 --- !u!1 &1210560968
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,6 +4296,66 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6534406, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565904, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565904, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6565904, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534406, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534406, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534406, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553484, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553484, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553484, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592878, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592878, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592878, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Size.z
+      value: 0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592878, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553484, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 138128, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -5115,36 +5107,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 113240, guid: 1114d4834cf96bc42b6b0d9aa8cef1b8, type: 2}
   m_PrefabInternal: {fileID: 1258700862}
---- !u!65 &1602280082
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602280080}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
-  m_Center: {x: 0, y: 0, z: 0.000034715045}
---- !u!114 &1602280084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602280080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0eef623ee95ac044b5f33ebfc32f4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseOnlyOnce: 0
-  HighlightSpeed: 6
-  AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-  CanBeUsed: 0
-  MoveShift: {x: 0, y: 0.02866468, z: 0}
-  MoveSpeed: 6
-  id: 1
 --- !u!1001 &1614685811
 Prefab:
   m_ObjectHideFlags: 0

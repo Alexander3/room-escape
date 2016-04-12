@@ -46,6 +46,8 @@ GameObject:
   - 4: {fileID: 408452}
   - 33: {fileID: 3395520}
   - 23: {fileID: 2394682}
+  - 65: {fileID: 6534406}
+  - 114: {fileID: 11424284}
   m_Layer: 0
   m_Name: SwitchBoxSlider2
   m_TagString: Untagged
@@ -80,6 +82,8 @@ GameObject:
   - 4: {fileID: 408288}
   - 33: {fileID: 3390194}
   - 23: {fileID: 2350374}
+  - 65: {fileID: 6553484}
+  - 114: {fileID: 11486200}
   m_Layer: 0
   m_Name: SwitchBoxSlider3
   m_TagString: Untagged
@@ -219,6 +223,8 @@ GameObject:
   - 4: {fileID: 475796}
   - 33: {fileID: 3317022}
   - 23: {fileID: 2397762}
+  - 65: {fileID: 6592878}
+  - 114: {fileID: 11465960}
   m_Layer: 0
   m_Name: SwitchBoxSlider4
   m_TagString: Untagged
@@ -977,6 +983,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.46235934, y: 0.4623594, z: 0.004787164}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6534406
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
+  m_Center: {x: 0, y: 0, z: 0.000034715045}
+--- !u!65 &6553484
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
+  m_Center: {x: 0, y: 0, z: 0.000034715045}
 --- !u!65 &6565904
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -987,8 +1017,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
-  m_Center: {x: 0, y: 0, z: 0.000034715045}
+  m_Size: {x: 0.04730563, y: 0.07314026, z: 0.0052933893}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6589544
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1001,6 +1031,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.49999994, y: 0.5, z: 0.050000004}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6592878
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.022869976, y: 0.022869978, z: 0.0052933893}
+  m_Center: {x: 0, y: 0, z: 0.000034476627}
+--- !u!114 &11424284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0eef623ee95ac044b5f33ebfc32f4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseOnlyOnce: 0
+  HighlightSpeed: 6
+  AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  CanBeUsed: 0
+  MoveShift: {x: 0, y: 0.02866468, z: 0}
+  MoveSpeed: 6
+  id: 1
 --- !u!114 &11459666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1019,6 +1079,24 @@ MonoBehaviour:
   MoveShift: {x: 0, y: 0.02866468, z: 0}
   MoveSpeed: 6
   id: 0
+--- !u!114 &11465960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0eef623ee95ac044b5f33ebfc32f4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseOnlyOnce: 0
+  HighlightSpeed: 6
+  AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  CanBeUsed: 1
+  MoveShift: {x: 0, y: 0.02866468, z: 0}
+  MoveSpeed: 6
+  id: 3
 --- !u!114 &11477706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1036,6 +1114,24 @@ MonoBehaviour:
   CanBeUsed: 0
   MoveShift: {x: 0, y: 0, z: -0.462}
   MoveSpeed: 6
+--- !u!114 &11486200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0eef623ee95ac044b5f33ebfc32f4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseOnlyOnce: 0
+  HighlightSpeed: 6
+  AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  CanBeUsed: 1
+  MoveShift: {x: 0, y: 0.02866468, z: 0}
+  MoveSpeed: 6
+  id: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

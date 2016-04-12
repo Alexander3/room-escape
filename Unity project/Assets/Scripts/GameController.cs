@@ -42,15 +42,15 @@ class GameController : MonoBehaviour
                 //Door.GetComponent<Door>().enabled = false;
 				lockAgain(Tvset4);
 			
-			if (_switchesState[2] == true)                
-				unlock(pokretlo);                
+			if (_switchesState[1] == true)
+				unlock(pokretlo);
 			else
 				lockAgain(pokretlo);
         };
 
-		TurnLock.LockTurned += (float rot) => {
-			if (rot % 360 == 3 * pokretlo.GetComponent<RotateOnUse>().Rotation.y)                
-				unlock(safeDoor);                
+		TurnLock.LockTurned += (short rot) => {
+			if (rot % 360 == (int)(360 * 0.35f))
+				unlock(safeDoor);
 			else
 				lockAgain(safeDoor);
 		};
