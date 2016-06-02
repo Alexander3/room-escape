@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 0f1487ce31280ed4ab9c66038ffd74b2
+timeCreated: 1464880312
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chainLeft
+    100002: chainMiddle
+    100004: chainRight
+    100006: cupboard
+    100008: leftDoor
+    100010: oneChain
+    100012: padlock
+    100014: //RootNode
+    100016: rightDoor
+    100018: uchwyt
+    100020: uchwyt_001
+    100022: chainRight_001
+    400000: chainLeft
+    400002: chainMiddle
+    400004: chainRight
+    400006: cupboard
+    400008: leftDoor
+    400010: oneChain
+    400012: padlock
+    400014: //RootNode
+    400016: rightDoor
+    400018: uchwyt
+    400020: uchwyt_001
+    400022: chainRight_001
+    2300000: chainLeft
+    2300002: chainMiddle
+    2300004: chainRight
+    2300006: cupboard
+    2300008: leftDoor
+    2300010: oneChain
+    2300012: padlock
+    2300014: rightDoor
+    2300016: uchwyt
+    2300018: uchwyt_001
+    2300020: chainRight_001
+    3300000: chainLeft
+    3300002: chainMiddle
+    3300004: chainRight
+    3300006: cupboard
+    3300008: leftDoor
+    3300010: oneChain
+    3300012: padlock
+    3300014: rightDoor
+    3300016: uchwyt
+    3300018: uchwyt_001
+    3300020: chainRight_001
+    4300000: uchwyt_001
+    4300002: oneChain
+    4300004: chainMiddle
+    4300006: chainRight
+    4300008: rightDoor
+    4300010: leftDoor
+    4300012: uchwyt
+    4300014: cupboard
+    4300016: chainLeft
+    4300018: padlock
+    4300020: chainRight_001
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,8 +11,10 @@ class GameController : MonoBehaviour
 	public GameObject SwitchBoxSlider2 = null;
 	public GameObject pokretlo = null;
 	public GameObject safeDoor = null;
+    public GameObject RightDoor = null;
+    public GameObject LeftDoor = null;
 
-	private Color[] _screensColorsOrder	= { Color.green, Color.red, Color.blue };
+    private Color[] _screensColorsOrder	= { Color.green, Color.red, Color.blue };
 	private bool[] _screensColorsState = new bool[3];
 	private bool[] _switchesState = new bool[4];
 
@@ -58,6 +60,12 @@ class GameController : MonoBehaviour
         TextScreen.TvScreenUsed += () =>
         {
 			unlock(SwitchBoxSlider2);
+        };
+
+        Anime.ChainUsed += () =>
+        {
+            unlock(RightDoor);
+            unlock(LeftDoor);
         };
 
     }
