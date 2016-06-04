@@ -11,13 +11,13 @@ public class Door : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if(other is CharacterController && enabled)
+		if(other.gameObject.tag == "KeyCard" && enabled)
 			anim.SetBool("open", true);
 
 	}
 	void OnTriggerExit(Collider other)
 	{
-		if(other is CharacterController && enabled)
+		if(other.gameObject.tag == "KeyCard" && enabled)
 			anim.SetBool("open", false);
 	}
 }

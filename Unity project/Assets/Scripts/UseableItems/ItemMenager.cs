@@ -94,7 +94,7 @@ public class ItemMenager : MonoBehaviour
 		Vector3 newPosition = Camera.main.transform.position + Camera.main.transform.forward + Camera.main.transform.rotation * _currentPickable.handShift;
         _pickedItem.GetComponent<Rigidbody>().velocity = (newPosition - _pickedItem.transform.position) * PullingSpeed;
 		if (!stopLerpingPickedItem) {
-			_pickedItem.transform.rotation = Quaternion.Lerp (_pickedItem.transform.rotation, targetRot, Time.deltaTime * _currentPickable.MoveSpeed);
+            _pickedItem.transform.rotation = Quaternion.Lerp (_pickedItem.transform.rotation, targetRot, Time.deltaTime * _currentPickable.MoveSpeed);
 			stopLerpingPickedItem = Quaternion.Angle(_pickedItem.transform.rotation, targetRot) < 1f;
 		}else
 			_pickedItem.transform.rotation = targetRot;
