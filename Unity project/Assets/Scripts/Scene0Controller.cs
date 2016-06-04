@@ -3,16 +3,13 @@ using UnityEngine.UI;
 using System.Linq;
 
 
-class GameController : MonoBehaviour
+class Scene0Controller : BaseController
 {
-	public GameObject Door = null;
 	public GameObject SwitchBoxDoor = null;
 	public GameObject Tvset4 = null;
 	public GameObject SwitchBoxSlider2 = null;
 	public GameObject pokretlo = null;
 	public GameObject safeDoor = null;
-    public GameObject RightDoor = null;
-    public GameObject LeftDoor = null;
 
     private Color[] _screensColorsOrder	= { Color.green, Color.red, Color.blue };
 	private bool[] _screensColorsState = new bool[3];
@@ -37,11 +34,9 @@ class GameController : MonoBehaviour
 			_switchesState [id] = state;
             if (_switchesState[0] == true)
             {
-                //Door.GetComponent<Door>().enabled = true;
 				unlock(Tvset4);
             }
             else
-                //Door.GetComponent<Door>().enabled = false;
 				lockAgain(Tvset4);
 			
 			if (_switchesState[1] == true)
@@ -61,19 +56,5 @@ class GameController : MonoBehaviour
         {
 			unlock(SwitchBoxSlider2);
         };
-
-        Anime.ChainUsed += () =>
-        {
-            unlock(RightDoor);
-            unlock(LeftDoor);
-        };
-
     }
-	private static void unlock(GameObject obj){
-		obj.GetComponent<Useable>().CanBeUsed = true; 
-		Debug.Log (obj.name + " unlocked");
-	}
-	private static void lockAgain(GameObject obj){
-		obj.GetComponent<Useable>().CanBeUsed = false;
-	}
 }

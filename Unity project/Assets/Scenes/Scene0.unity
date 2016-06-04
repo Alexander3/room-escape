@@ -1532,14 +1532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0de608f7c2f6edc42a19ca70f5de28ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 102394981}
   SwitchBoxDoor: {fileID: 688716541}
   Tvset4: {fileID: 1050915071}
   SwitchBoxSlider2: {fileID: 1602280080}
   pokretlo: {fileID: 12399635}
   safeDoor: {fileID: 102394981}
-  RightDoor: {fileID: 0}
-  LeftDoor: {fileID: 0}
 --- !u!4 &487112180
 Transform:
   m_ObjectHideFlags: 0
@@ -4452,7 +4449,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1355985669}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: -1.376, y: 2.913, z: 1.43}
+  m_LocalPosition: {x: -1.376, y: 2.975, z: 1.43}
   m_LocalScale: {x: 0.5133335, y: 0.9677496, z: 1}
   m_Children: []
   m_Father: {fileID: 1362905769}

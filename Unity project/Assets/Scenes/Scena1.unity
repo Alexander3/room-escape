@@ -2948,6 +2948,7 @@ GameObject:
   - 4: {fileID: 1283162447}
   - 33: {fileID: 1283162449}
   - 23: {fileID: 1283162448}
+  - 64: {fileID: 1283162450}
   m_Layer: 0
   m_Name: cupboard
   m_TagString: Untagged
@@ -3001,6 +3002,18 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283162446}
+  m_Mesh: {fileID: 4300014, guid: 0f1487ce31280ed4ab9c66038ffd74b2, type: 3}
+--- !u!64 &1283162450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283162446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
   m_Mesh: {fileID: 4300014, guid: 0f1487ce31280ed4ab9c66038ffd74b2, type: 3}
 --- !u!1 &1292048488 stripped
 GameObject:
@@ -4459,15 +4472,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1959768527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0de608f7c2f6edc42a19ca70f5de28ea, type: 3}
+  m_Script: {fileID: 11500000, guid: bda1fbe670260534c95df0e5dbeac759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 0}
-  SwitchBoxDoor: {fileID: 0}
-  Tvset4: {fileID: 0}
-  SwitchBoxSlider2: {fileID: 0}
-  pokretlo: {fileID: 0}
-  safeDoor: {fileID: 0}
   RightDoor: {fileID: 885588957}
   LeftDoor: {fileID: 1480158378}
 --- !u!1 &2013841647 stripped
