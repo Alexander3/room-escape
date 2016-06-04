@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Linq;
+using System.Collections.Generic;
 
 public abstract class Useable : MonoBehaviour {
 	public bool UseOnlyOnce = false;
@@ -11,13 +12,15 @@ public abstract class Useable : MonoBehaviour {
 	protected bool _alreadyUsed = false;   
 	protected bool _highlighting = false;
 	protected bool _highlight = true;
-	protected Material _material;
+	protected IEnumerable<Material> _materials;
 	private Color _highlightColor;
 
-	protected void Start()
-	{
-		_material = GetComponent<Renderer>().material;
-		_material.EnableKeyword ("_EMISSION");				
+    protected void Start()
+    {
+        _materials = GetComponentsInChildren<Renderer>().Select(r => {
+            r.material.EnableKeyword("_EMISSION");
+            return r.material;
+        });			
 	}
 
 	protected void Update()
@@ -41,18 +44,20 @@ public abstract class Useable : MonoBehaviour {
 		_highlightColor = CanBeUsed ? AcceptColor : RejectColor;
 	}
 
-	private void Highlight()
-	{
-		Color color = _material.GetColor ("_EmissionColor");
+    private void Highlight()
+    {
+        foreach (var _material in _materials) {
+            Color color = _material.GetColor("_EmissionColor");
 
-		if (_highlight)
-			color = Color.Lerp (color, _highlightColor, HighlightSpeed * Time.deltaTime);
-		else
-			color = Color.Lerp (color, Color.black, HighlightSpeed * Time.deltaTime);
-		
-		_material.SetColor ("_EmissionColor", color);
-		if (color == Color.black || color == _highlightColor)
-			_highlighting = false;
+            if (_highlight)
+                color = Color.Lerp(color, _highlightColor, HighlightSpeed * Time.deltaTime);
+            else
+                color = Color.Lerp(color, Color.black, HighlightSpeed * Time.deltaTime);
+
+            _material.SetColor("_EmissionColor", color);
+            if (color == Color.black || color == _highlightColor)
+                _highlighting = false;
+        }
 	}
 
 	public void Use(){

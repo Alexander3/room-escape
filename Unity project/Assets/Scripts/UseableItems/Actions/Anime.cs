@@ -2,18 +2,13 @@
 using UnityEngine.UI;
 
 
-public class Anime : Useable
+public class Anime : Useable, Cuttable
 {
     public delegate void ChainUse();
     public static event ChainUse ChainUsed;
 
-
-
-
     public GameObject chain;
     private Animator animator;
-
-
 
     override protected void doUse()
     {
