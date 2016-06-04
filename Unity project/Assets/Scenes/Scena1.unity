@@ -4232,7 +4232,7 @@ MonoBehaviour:
   UseOnlyOnce: 0
   HighlightSpeed: 6
   AcceptColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-  CanBeUsed: 1
+  CanBeUsed: 0
   Rotation: {x: 0, y: -80, z: 0}
   MoveSpeed: 6
   NonStop: 0
@@ -4246,8 +4246,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4502044, y: 1.825925, z: 1.5208894}
-  m_Center: {x: 0.7784902, y: -0.72246, z: -0.04968251}
+  m_Size: {x: 1.4502044, y: 1.25925, z: 1.5208894}
+  m_Center: {x: 0.7784902, y: -0.42246, z: -0.04968251}
 --- !u!23 &1646852204
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4748,7 +4748,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747027122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce4935d723b90445b2655b9d2398709, type: 3}
+  m_Script: {fileID: 11500000, guid: 59b5bd2a791004049ad4d947a1c753a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseOnlyOnce: 0
