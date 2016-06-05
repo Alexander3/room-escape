@@ -10,6 +10,9 @@ Obj/
 UnityGenerated/
 Library/
 Build/
+*.exe
+game_Data/
+*.pdb
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
