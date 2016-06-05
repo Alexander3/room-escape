@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RotateOnUse : Useable, Unlocked
+public class RotateOnUse : Useable
 {
 	public Vector3 Rotation = new Vector3(0,60,0);
 	public float MoveSpeed = 6f;
