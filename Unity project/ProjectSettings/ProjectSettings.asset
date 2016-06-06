@@ -57,9 +57,9 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  macFullscreenMode: 2
-  d3d9FullscreenMode: 0
-  d3d11FullscreenMode: 0
+  macFullscreenMode: 1
+  d3d9FullscreenMode: 1
+  d3d11FullscreenMode: 1
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0

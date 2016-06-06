@@ -1,16 +1,14 @@
 # Escape the room
 
-Game for studies project based on previous  KNI Kernel work.
+Game is based on previous [KNI Kernel](http://kernel.fis.agh.edu.pl/) work.
 
-## Solution
+Levels:
 
-+ Scene 1:
-    + Drop poster -> Set colours on front screens -> Switch box is unlocked.
-    + Move first switch -> TV screen is unlocked -> You can see safe code.
-    + Move second switch -> Safe lock is unlocked.
-    + Rotate lock 4 times -> Safe door is unlocked.
-    + Take key card from safe -> Door will open when you carry it.
-+ Scene 2:
-    + 
- 
+<img src="misc/scene0.PNG" height="250"/>
+<img src="misc/scene1.PNG" height="250"/>
 
+## Contributing
+
+In order to open project in Unity you must have Blender installed. Place your .blend files inside `Unity project\Assets\3D`. Do not use `3D stuff` folder, these files should be migrated into `Assets\3D`.
+
+### [Solution](Solution.md)
