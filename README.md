@@ -7,6 +7,12 @@ Levels:
 <img src="misc/scene0.PNG" height="250"/>
 <img src="misc/scene1.PNG" height="250"/>
 
+## How to play
+WSAD - Movement  
+SPACE - Jump  
+E - Use/pick up object  
+Q - Drop Object  
+
 ## Contributing
 
 Unity 5 was used to develop this project.
