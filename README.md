@@ -8,10 +8,11 @@ Levels:
 <img src="misc/scene1.PNG" height="250"/>
 
 ## How to play
+ [Download game](https://github.com/Alexander3/room-escape/releases/download/v1.0/Room.Escape.64.zip) unzip it and run `.exe` file.  
 WSAD - Movement  
 SPACE - Jump  
-E - Use/pick up object  
-Q - Drop Object  
+E - Pick up object / Use held item
+Q - Drop item  
 
 ## Contributing
 
