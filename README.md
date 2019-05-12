@@ -13,6 +13,7 @@ WSAD - Movement
 SPACE - Jump  
 E - Pick up object / Use held item
 Q - Drop item  
+Alt + F4 - Exit
 
 ## Contributing
 
