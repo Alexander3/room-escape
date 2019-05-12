@@ -9,6 +9,9 @@ Levels:
 
 ## Contributing
 
-In order to open project in Unity you must have Blender installed. Place your .blend files inside `Unity project\Assets\3D`. Do not use `3D stuff` folder, these files should be migrated into `Assets\3D`.
+Unity 5 was used to develop this project.
+In order to open project in Unity you must have Blender installed. Open folder `Unity Project` in Unity. 
+Place new .blend files inside `Unity project\Assets\3D`. Do not use `3D stuff` folder, 
+these files should be migrated into `Assets\3D`.
 
 ### [Solution](Solution.md)
